@@ -1,0 +1,56 @@
+---
+title: Almost Done Guys
+author: Keith Caballero
+date: '2020-11-09'
+slug: almost-done-guys
+categories:
+  - R
+tags:
+  - Demo
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-11-09T02:06:01-05:00'
+featured: no
+math: true
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="gamma-es-miembro-de-la-distribución-exponencial" class="section level2">
+<h2>Gamma es miembro de la distribución exponencial</h2>
+<p>Sea la densidad de gamma :</p>
+<p><span class="math display">\[f(x)=\frac{\beta^{\alpha}}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x} \quad x, \alpha, \beta&gt;0\]</span>
+Para demostrar de que la anterior expresión pertenece a la familia exponencial tenemos que llevar a la forma siguiente:</p>
+<p><span class="math display">\[f(x)=\exp \left\{\frac{\theta x-b(\theta)}{a(\phi)}+c(x, \phi)\right\}\]</span>
+Aplicamos log en ambos lados de la densidad de gamma
+<span class="math display">\[\log f(x)=\alpha \log \beta-\log (\Gamma(x))+(\alpha-1) \log x-\beta x\]</span></p>
+<p>Aplicamos exponencial</p>
+<p><span class="math display">\[f(x)=\exp \{-\beta x+\alpha \log \beta+(\alpha-1) \log x-\log \Gamma(\alpha)\}\]</span></p>
+<p><span class="math display">\[=\exp \left\{\frac{-\frac{\beta}{\alpha} x+\frac{\alpha}{\alpha} \log \beta}{\frac{1}{\alpha}}+(\alpha-1) \log x-\log \Gamma(\alpha)\right\}\]</span></p>
+<p><span class="math display">\[=\exp \left\{\frac{\frac{\beta x}{\alpha}+\log \beta}{\frac{-1}{\alpha}} +(\alpha-1) \log x-\log \Gamma(\alpha)\right\}\]</span>
+<span class="math display">\[\theta =\frac{\beta}{\alpha} \quad \phi=1 / \alpha \quad a(\phi)=-\frac{1}{\alpha}\]</span></p>
+<p><span class="math display">\[\beta=\theta_{\alpha}=\frac{\theta}{\phi} \]</span>
+<span class="math display">\[\log \beta=\log \theta-\log \phi \]</span>
+<span class="math display">\[=\exp \left\{\frac{\theta x-\log \theta}{-\phi}+\frac{\log \phi}{\phi}+\left(\frac{1}{\Phi}-1\right) \log x-\log \left(\Gamma\left(\frac{1}{\phi}\right)\right)\right] \]</span>
+<span class="math display">\[=\exp \left\{\frac{\theta x-\log \theta}{-\phi}+c(x, \phi)\right\} \]</span>
+<span class="math display">\[b(\theta)=\log \theta \quad a(\phi)=-\phi\]</span>
+## Si queremos obtener tanto la esperanza como la varianza de las expresiones en función a lo obtenido entonces:</p>
+<p><span class="math display">\[\mathbb{E}[x]=\frac{\partial}{\partial \theta} b(\theta)=\frac{\partial}{\partial \theta} \log (\theta) =\frac{1}{\theta}=\theta^{-1} \]</span>
+<span class="math display">\[\operatorname{Var}[x]=a(\phi) \frac{\partial^{2}}{\partial \theta^{2}} b(\theta) =-\phi \frac{\partial}{\partial \theta} \theta^{-1}=\frac{\phi}{\theta^{2}}\]</span></p>
+<p><span class="math display">\[\text { Recordamos } \theta=\frac{\beta}{\alpha}, \phi=\frac{1}{\alpha} \]</span>
+<span class="math display">\[\mathbb{E}[x] =\frac{1}{\theta}=\frac{\alpha}{\beta} \]</span>
+<span class="math display">\[\mathbb{V}[x] =\frac{\phi}{\theta^{2}}=\frac{1}{\alpha}\left(\frac{\alpha^{2}}{\beta^{2}}\right)=\frac{\alpha}{\beta^{2}}\]</span></p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre class="r"><code>ggplot(mtcars) +
+  geom_point(aes(x = mpg,y=wt))</code></pre>
+<p><img src="/post/2020-11-09-almost-done-guys/index.es_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>

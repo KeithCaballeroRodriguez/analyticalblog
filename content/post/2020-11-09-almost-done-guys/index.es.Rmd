@@ -1,0 +1,67 @@
+---
+title: Almost Done Guys
+author: Keith Caballero
+date: '2020-11-09'
+slug: almost-done-guys
+categories:
+  - R
+tags:
+  - Demo
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-11-09T02:06:01-05:00'
+featured: no
+math: true
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## Gamma es miembro de la distribución exponencial
+
+Sea la densidad de gamma :
+
+$$f(x)=\frac{\beta^{\alpha}}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x} \quad x, \alpha, \beta>0$$
+Para demostrar de que la anterior expresión pertenece a la familia exponencial tenemos que llevar a la forma siguiente:
+
+$$f(x)=\exp \left\{\frac{\theta x-b(\theta)}{a(\phi)}+c(x, \phi)\right\}$$
+Aplicamos log en ambos lados de la densidad de gamma
+$$\log f(x)=\alpha \log \beta-\log (\Gamma(x))+(\alpha-1) \log x-\beta x$$
+
+Aplicamos exponencial
+
+$$f(x)=\exp \{-\beta x+\alpha \log \beta+(\alpha-1) \log x-\log \Gamma(\alpha)\}$$
+
+$$=\exp \left\{\frac{-\frac{\beta}{\alpha} x+\frac{\alpha}{\alpha} \log \beta}{\frac{1}{\alpha}}+(\alpha-1) \log x-\log \Gamma(\alpha)\right\}$$
+
+$$=\exp \left\{\frac{\frac{\beta x}{\alpha}+\log \beta}{\frac{-1}{\alpha}} +(\alpha-1) \log x-\log \Gamma(\alpha)\right\}$$
+$$\theta =\frac{\beta}{\alpha} \quad \phi=1 / \alpha \quad a(\phi)=-\frac{1}{\alpha}$$
+
+
+$$\beta=\theta_{\alpha}=\frac{\theta}{\phi} $$
+$$\log \beta=\log \theta-\log \phi $$
+$$=\exp \left\{\frac{\theta x-\log \theta}{-\phi}+\frac{\log \phi}{\phi}+\left(\frac{1}{\Phi}-1\right) \log x-\log \left(\Gamma\left(\frac{1}{\phi}\right)\right)\right] $$
+$$=\exp \left\{\frac{\theta x-\log \theta}{-\phi}+c(x, \phi)\right\} $$
+$$b(\theta)=\log \theta \quad a(\phi)=-\phi$$
+## Si queremos obtener tanto la esperanza como la varianza de las expresiones en función a lo obtenido entonces:
+
+$$\mathbb{E}[x]=\frac{\partial}{\partial \theta} b(\theta)=\frac{\partial}{\partial \theta} \log (\theta) =\frac{1}{\theta}=\theta^{-1} $$
+$$\operatorname{Var}[x]=a(\phi) \frac{\partial^{2}}{\partial \theta^{2}} b(\theta) =-\phi \frac{\partial}{\partial \theta} \theta^{-1}=\frac{\phi}{\theta^{2}}$$
+
+$$\text { Recordamos } \theta=\frac{\beta}{\alpha}, \phi=\frac{1}{\alpha} $$
+$$\mathbb{E}[x] =\frac{1}{\theta}=\frac{\alpha}{\beta} $$
+$$\mathbb{V}[x] =\frac{\phi}{\theta^{2}}=\frac{1}{\alpha}\left(\frac{\alpha^{2}}{\beta^{2}}\right)=\frac{\alpha}{\beta^{2}}$$
+
+
+```{r warning=FALSE,message=FALSE}
+library(tidyverse)
+```
+
+```{r}
+ggplot(mtcars) +
+  geom_point(aes(x = mpg,y=wt))
+```
+
