@@ -1,50 +1,39 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Mis intereses estan entre el aprendizaje automático, deep learning, estadística espacial, análisis multivariado y mi hobbie la programación
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: Statistic
+    institution: UNMSM
+    year: 2016-2021
 email: ""
 highlight_name: false
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Data Science
+- Digital Transformation
+- Statistics
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
-role: Professor of Artificial Intelligence
+- name: Universidad Nacional Mayor de San Marcos
+  url: http://www.unmsm.edu.pe/
+role: Practicante Pre Profesional Data Scientist
 social:
 - icon: envelope
   icon_pack: fas
   link: /#contact
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/KeithCaballero6
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/KeithCaballeroRodriguez
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/keith-caballero-rodriguez/
 superuser: true
-title: Nelson Bighetti
+title: Keith Caballero
 user_groups:
-- Principal Investigators
+- Hermanos Analíticos
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Gran apasionado de la ciencia de los datos, analítica avanzada y la generación de valor a los negocios mediante herramientas de machine learning y big data. Destacadas cualidades de iniciativa y liderazgo. Trato cordial a todo nivel. Facilidad para adaptarse a los cambios, mostrando rápida asimilación en nuevas tareas. Creativo, sociable y proactivo, de rápida identificación con los valores y cultura organizacional, así como con los objetivos y metas propuestas. Con intereses en el análisis multivariado, series de tiempo y solución de problemas mediante machine learning. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "media/demo_resume.pdf" "newtab" >}}curriculum{{< /staticref >}}.

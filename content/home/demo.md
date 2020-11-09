@@ -12,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 15
 
-title: Demos
+title: ¿Quien soy yo?
 subtitle:
 
 design:
@@ -28,7 +28,7 @@ design:
     padding: ["20px", "0", "20px", "0"]
 ---
 
-Welcome to the demo of the **resumé template** for Academic.
+Mi nombre es Keith Caballero Rodriguez, soy apasionado del mundo de la ciencia de datos, espero que mis conocimientos sean de mucha ayuda para ustedes
 
 [View more templates](https://sourcethemes.com/academic/templates/) for Academic.
 
