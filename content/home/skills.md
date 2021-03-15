@@ -18,7 +18,7 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
+  description = "80%"
   
 [[feature]]
   icon = "chart-line"
@@ -27,10 +27,28 @@ subtitle = ""
   description = "100%"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = "80%"
+
+[[feature]]
+  icon = "database"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "SQL Server"
+  description = "90%"
+  
+[[feature]]
+  icon = "cloudversify"
+  icon_pack = "fab"
+  name = "Cloud Computing"
+  description = "70%"
+  
+[[feature]]
+  icon = "code"
+  icon_pack = "fas"
+  name = "Javascript"
+  description = "20%"
 
 # Uncomment to use emoji icons.
 # [[feature]]

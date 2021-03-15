@@ -13,7 +13,7 @@ headless: true
 weight: 15
 
 title: ¿Quien soy yo?
-subtitle:
+subtitle: Who am I?
 
 design:
   columns: "1"
@@ -28,16 +28,14 @@ design:
     padding: ["20px", "0", "20px", "0"]
 ---
 
-Mi nombre es Keith Caballero Rodriguez, soy apasionado del mundo de la ciencia de datos, espero que mis conocimientos sean de mucha ayuda para ustedes
+Hola soy Keith Caballero, apasionado del mundo de la ciencia de datos, espero que mis conocimientos sean de mucha ayuda para ustedes
 
-[View more templates](https://sourcethemes.com/academic/templates/) for Academic.
+[Revisa mi canal](https://www.youtube.com/channel/UCdU3PebWMDCtn0ixvGtHG2A) for Analíticos.
 
-**Over 500,000 [Amazing Websites](https://sourcethemes.com/academic/) have Already Been Built with Academic**
+**Más de 500,000 [Amazing Websites](https://sourcethemes.com/academic/) han construido este tipo de paginas con Academic, si deseas puedes revisarlo**
 
-**[Join](https://sourcethemes.com/academic/docs/install/) the Most Empowered Hugo Community**
+**[Subscribete](https://www.youtube.com/channel/UCdU3PebWMDCtn0ixvGtHG2A) a la Comunidad De Anlítcos**
 
 {{% alert note %}}
-This homepage section is an example of adding [elements](https://sourcethemes.com/academic/docs/writing-markdown-latex/) to the [*Blank* widget](https://sourcethemes.com/academic/docs/widgets/).
-
-Backgrounds can be applied to any section. Here, the *background* option is set give an *image parallax* effect.
+Esta es una página sin fines de lucro.
 {{% /alert %}}
